@@ -32,10 +32,10 @@ def lin_cost(X, Y, M):
         n = M.shape[0]
         cost = np.zeros(n)
         for ii, Mi in enumerate(M):
-            cost[ii] = np.mean((Y - X.dot(Mi))**2)
+            cost[ii] = np.mean((Y - X.dot(Mi))**2) / 2.
         return cost
     else:
-        return np.mean((Y - X.dot(M))**2)
+        return np.mean((Y - X.dot(M))**2) / 2.
 
 def abs_cost(M, alpha):
     if M.ndim > 1:
