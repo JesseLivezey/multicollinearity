@@ -1,2 +1,2 @@
 # multicolinearity
-Analysis looking and (multi)colinearity in regression and some solutions
+Analysis looking at (multi)colinearity in regression and Lasso
